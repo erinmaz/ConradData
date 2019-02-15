@@ -60,11 +60,32 @@ do
 /Users/erin/Desktop/Projects/ConradData/scripts/QA_diff_summary.sh `basename $f`
 done
 
+/Users/erin/Desktop/Projects/ConradData/scripts/analysis_Kwon_ROIs_dilate_and_checkOverlap.sh
+
+
+######## RUNNING NOW ##########
 for f in MNI006 MNI014 MNI016
 do
 /Users/erin/Desktop/Projects/ConradData/scripts/analysis_diffusion_bedpostx.sh $f &
 done
 
 /Users/erin/Desktop/Projects/ConradData/scripts/analysis_T12MNI_1mm_lesionmask.sh
-/Users/erin/Desktop/Projects/ConradData/scripts/analysis_Kwon_ROIs_dilate_and_checkOverlap.sh
+
+
+
+######## TO RUN ##############
+
+for f in MNI029 MNI902 MNI915 
+do
+/Users/erin/Desktop/Projects/ConradData/scripts/analysis_diffusion_bedpostx.sh $f &
+done
+
+for f in MNI923_100vols MNI928 
+do
+/Users/erin/Desktop/Projects/ConradData/scripts/analysis_diffusion_bedpostx.sh $f &
+done
+
+/Users/erin/Desktop/Projects/ConradData/scripts/analysis_Kwon_ROIs_probtrackx_refined2_corticalwaypoint.sh
+
+/Users/erin/Desktop/Projects/ConradData/scripts/analysis_Kwon_ROIs_probtrackx/thalwaypoint.sh
 
