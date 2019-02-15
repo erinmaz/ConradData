@@ -31,7 +31,7 @@ echo left_dentate_waytotal >> ${OUTDIR}/regions.txt
 echo right_dentate_tract >> ${OUTDIR}/regions.txt
 echo right_dentate_waytotal >> ${OUTDIR}/regions.txt
  
- tring=`echo $string ${OUTDIR}/regions.txt`
+string=`echo $string ${OUTDIR}/regions.txt`
 # outdir_L=dentate_L_dil_exclude2_corticalwaypoint
 # outdir_R=dentate_R_dil_exclude2_corticalwaypoint
  #outdir_R=dentate_R_dil_thalterm
