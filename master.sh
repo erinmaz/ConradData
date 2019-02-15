@@ -1,6 +1,6 @@
 scriptsdir=/Users/erin/Desktop/Projects/ConradData/scripts
 
-#DONE
+#DONE 
 #for f in MNI001 MNI002
 
 #DONE ANAT ONLY
@@ -62,6 +62,8 @@ done
 
 /Users/erin/Desktop/Projects/ConradData/scripts/analysis_Kwon_ROIs_dilate_and_checkOverlap.sh
 
+/Users/erin/Desktop/Projects/ConradData/scripts/analysis_T12MNI_1mm_lesionmask.sh
+
 
 ######## RUNNING NOW ##########
 for f in MNI006 MNI014 MNI016
@@ -69,23 +71,27 @@ do
 /Users/erin/Desktop/Projects/ConradData/scripts/analysis_diffusion_bedpostx.sh $f &
 done
 
-/Users/erin/Desktop/Projects/ConradData/scripts/analysis_T12MNI_1mm_lesionmask.sh
 
+for f in MNI008 MNI029
+do
+/Users/erin/Desktop/Projects/ConradData/scripts/analysis_diffusion_bedpostx.sh $f &
+done
+
+/Users/erin/Desktop/Projects/ConradData/scripts/analysis_Kwon_ROIs_probtrackx_makeROIs.sh
 
 
 ######## TO RUN ##############
 
-for f in MNI029 MNI902 MNI915 
+for f in MNI915 MNI923_100vols MNI928 
 do
 /Users/erin/Desktop/Projects/ConradData/scripts/analysis_diffusion_bedpostx.sh $f &
 done
 
-for f in MNI923_100vols MNI928 
-do
-/Users/erin/Desktop/Projects/ConradData/scripts/analysis_diffusion_bedpostx.sh $f &
-done
+
 
 /Users/erin/Desktop/Projects/ConradData/scripts/analysis_Kwon_ROIs_probtrackx_refined2_corticalwaypoint.sh
 
-/Users/erin/Desktop/Projects/ConradData/scripts/analysis_Kwon_ROIs_probtrackx/thalwaypoint.sh
+/Users/erin/Desktop/Projects/ConradData/scripts/analysis_Kwon_ROIs_probtrackx_thalwaypoint.sh
+
+/Users/erin/Desktop/Projects/ConradData/scripts/analysis_Kwon_ROIs_probtrackx_thalterm.sh
 

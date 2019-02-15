@@ -31,6 +31,6 @@ echo ${MAINDIR}/analysis/${MYSUB}/diffusion/Kwon_ROIs/Precentral+Juxtapositional
 
 /usr/local/fsl/bin/probtrackx2  -x ${MAINDIR}/analysis/${MYSUB}/diffusion/Kwon_ROIs/dentate_L_dil -l --onewaycondition --wayorder -c 0.2 -S 2000 --steplength=0.5 -P 5000 --fibthresh=0.01 --distthresh=0.0 --sampvox=0.0 --forcedir --opd -s ${MAINDIR}/analysis/${MYSUB}/diffusion.bedpostX/merged -m ${MAINDIR}/analysis/${MYSUB}/diffusion.bedpostX/nodif_brain_mask  --dir=${outdir_dentate_L} --waypoints=${outdir_dentate_L}/waypoints.txt  --waycond=AND --avoid=${MAINDIR}/analysis/${MYSUB}/diffusion/Kwon_ROIs/exclude_L2
 
-fsleyes ${MAINDIR}/analysis/${MYSUB}/diffusion/mean_b0_unwarped ${outdir_dentate_R}/fdt_paths ${outdir_dentate_L}/fdt_paths &
+fsleyes ${MAINDIR}/analysis/${MYSUB}/diffusion/nodif_cor ${outdir_dentate_R}/fdt_paths ${outdir_dentate_L}/fdt_paths &
 
 done
