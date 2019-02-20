@@ -64,32 +64,55 @@ done
 
 /Users/erin/Desktop/Projects/ConradData/scripts/analysis_T12MNI_1mm_lesionmask.sh
 
-
-######## RUNNING NOW ##########
 for f in MNI006 MNI014 MNI016
 do
 /Users/erin/Desktop/Projects/ConradData/scripts/analysis_diffusion_bedpostx.sh $f &
 done
-
 
 for f in MNI008 MNI029
 do
 /Users/erin/Desktop/Projects/ConradData/scripts/analysis_diffusion_bedpostx.sh $f &
 done
 
-/Users/erin/Desktop/Projects/ConradData/scripts/analysis_Kwon_ROIs_probtrackx_makeROIs.sh
-
-
-######## TO RUN ##############
-
 for f in MNI915 MNI923_100vols MNI928 
 do
 /Users/erin/Desktop/Projects/ConradData/scripts/analysis_diffusion_bedpostx.sh $f &
 done
 
-
+/Users/erin/Desktop/Projects/ConradData/scripts/analysis_Kwon_ROIs_probtrackx_makeROIs.sh
 
 /Users/erin/Desktop/Projects/ConradData/scripts/analysis_Kwon_ROIs_probtrackx_refined2_corticalwaypoint.sh
+
+/Users/erin/Desktop/Projects/ConradData/scripts/analysis_Kwon_ROIs_probtrackx_checkvols.sh dentate_L_dil_exclude2_corticalwaypoint dentate_R_dil_exclude2_corticalwaypoint
+
+#outdir_L=dentate_L_dil_exclude2_corticalwaypoint
+#outdir_R=dentate_R_dil_exclude2_corticalwaypoint
+ #outdir_R=dentate_R_dil_thalterm
+#outdir_L=dentate_L_dil_thalterm
+#outdir_R=dentate_R_dil_thalwaypoint
+#outdir_L=dentate_L_dil_thalwaypoint
+#  outdir_L=dentate_L_dil_exclude2_corticalwaypoint_dilmore
+# outdir_R=dentate_R_dil_exclude2_corticalwaypoint_dilmore
+# outdir_L=dentate_L_dil_exclude2_thalterm_dilmore
+# outdir_R=dentate_R_dil_exclude2_thalterm_dilmore
+#outdir_L=dentate_L_dil_exclude2_cortical_thal_waypoint_dilmore
+#outdir_R=dentate_R_dil_exclude2_cortical_thal_waypoint_dilmore
+
+######## RUNNING NOW ##########
+
+
+
+
+
+
+
+######## TO RUN ##############
+
+
+
+
+
+
 
 /Users/erin/Desktop/Projects/ConradData/scripts/analysis_Kwon_ROIs_probtrackx_thalwaypoint.sh
 

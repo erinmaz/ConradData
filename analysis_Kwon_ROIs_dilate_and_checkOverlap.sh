@@ -1,5 +1,6 @@
 MAINDIR=/Users/erin/Desktop/Projects/ConradData
 for MYSUB in MNI001 MNI002 MNI006 MNI008 MNI014 MNI016 MNI029 MNI902 MNI915 MNI923_100vols MNI928
+
 do
 
 fslmaths ${MAINDIR}/analysis/${MYSUB}/diffusion/Kwon_ROIs/SCP_R -dilM ${MAINDIR}/analysis/${MYSUB}/diffusion/Kwon_ROIs/SCP_R_dil

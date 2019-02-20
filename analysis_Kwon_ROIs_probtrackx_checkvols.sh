@@ -1,5 +1,7 @@
 MAINDIR=/Users/erin/Desktop/Projects/ConradData
 OUTDIR=/Users/erin/Desktop/Projects/ConradData/analysis
+outdir_L=$1
+outdir_R=$2
 string=""
 
 echo REGIONS >> ${OUTDIR}/regions.txt
@@ -31,19 +33,7 @@ echo left_dentate_waytotal >> ${OUTDIR}/regions.txt
 echo right_dentate_tract >> ${OUTDIR}/regions.txt
 echo right_dentate_waytotal >> ${OUTDIR}/regions.txt
  
-string=`echo $string ${OUTDIR}/regions.txt`
-# outdir_L=dentate_L_dil_exclude2_corticalwaypoint
-# outdir_R=dentate_R_dil_exclude2_corticalwaypoint
- #outdir_R=dentate_R_dil_thalterm
-#outdir_L=dentate_L_dil_thalterm
-#outdir_R=dentate_R_dil_thalwaypoint
-#outdir_L=dentate_L_dil_thalwaypoint
-#  outdir_L=dentate_L_dil_exclude2_corticalwaypoint_dilmore
-# outdir_R=dentate_R_dil_exclude2_corticalwaypoint_dilmore
-# outdir_L=dentate_L_dil_exclude2_thalterm_dilmore
-# outdir_R=dentate_R_dil_exclude2_thalterm_dilmore
-#outdir_L=dentate_L_dil_exclude2_cortical_thal_waypoint_dilmore
-#outdir_R=dentate_R_dil_exclude2_cortical_thal_waypoint_dilmore
+string=`echo $string ${OUTDIR}/regions.txt` 
 
 for MYSUB in MNI001 MNI002 MNI006 MNI008 MNI014 MNI016 MNI029 MNI902 MNI915 MNI923_100vols MNI928
 do 

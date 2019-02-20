@@ -2,6 +2,7 @@
 MAINDIR=/Users/erin/Desktop/Projects/ConradData
 ROIDIR=/Users/erin/Desktop/Projects/MRGFUS/scripts/rois_standardspace
 for MYSUB in MNI001 MNI002 MNI006 MNI008 MNI014 MNI016 MNI029 MNI902 MNI915 MNI923_100vols MNI928
+
 do
 
 applywarp -i ${ROIDIR}/harvardoxford-cortical_prob_Precentral+Juxtapositional_L -r ${MAINDIR}/analysis/${MYSUB}/diffusion/nodif_cor -w ${MAINDIR}/analysis/${MYSUB}/anat/xfms/MNI_1mm_2_mT1_warp --postmat=${MAINDIR}/analysis/${MYSUB}/diffusion/xfms/T1_2_diff_bbr.mat -o ${MAINDIR}/analysis/${MYSUB}/diffusion/Kwon_ROIs/Precentral+Juxtapositional_L --interp=nn
